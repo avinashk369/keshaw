@@ -76,7 +76,7 @@
                 $.ajaxSetup({
                     headers: {
                         'X-CSRF-TOKEN': '<?= csrf_token() ?>'
-                    }
+                    } 
                 });
                jQuery.ajax({
                   url: "{{ url('login') }}",
