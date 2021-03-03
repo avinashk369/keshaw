@@ -10,254 +10,104 @@
               </div>
               <div class="card-body">
                 <div class="table-responsive">
-                  <table class="table">
-                    <thead class=" text-primary">
-                      <th>
-                        Name
-                      </th>
-                      <th>
-                        Country
-                      </th>
-                      <th>
-                        City
-                      </th>
-                      <th class="text-right">
-                        Salary
-                      </th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          Dakota Rice
-                        </td>
-                        <td>
-                          Niger
-                        </td>
-                        <td>
-                          Oud-Turnhout
-                        </td>
-                        <td class="text-right">
-                          $36,738
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Minerva Hooper
-                        </td>
-                        <td>
-                          Curaçao
-                        </td>
-                        <td>
-                          Sinaai-Waas
-                        </td>
-                        <td class="text-right">
-                          $23,789
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Sage Rodriguez
-                        </td>
-                        <td>
-                          Netherlands
-                        </td>
-                        <td>
-                          Baileux
-                        </td>
-                        <td class="text-right">
-                          $56,142
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Philip Chaney
-                        </td>
-                        <td>
-                          Korea, South
-                        </td>
-                        <td>
-                          Overland Park
-                        </td>
-                        <td class="text-right">
-                          $38,735
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Doris Greene
-                        </td>
-                        <td>
-                          Malawi
-                        </td>
-                        <td>
-                          Feldkirchen in Kärnten
-                        </td>
-                        <td class="text-right">
-                          $63,542
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Mason Porter
-                        </td>
-                        <td>
-                          Chile
-                        </td>
-                        <td>
-                          Gloucester
-                        </td>
-                        <td class="text-right">
-                          $78,615
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Jon Porter
-                        </td>
-                        <td>
-                          Portugal
-                        </td>
-                        <td>
-                          Gloucester
-                        </td>
-                        <td class="text-right">
-                          $98,615
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="card card-plain">
-              <div class="card-header">
-                <h4 class="card-title"> Table on Plain Background</h4>
-                <p class="card-category"> Here is a subtitle for this table</p>
-              </div>
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead class=" text-primary">
-                      <th>
-                        Name
-                      </th>
-                      <th>
-                        Country
-                      </th>
-                      <th>
-                        City
-                      </th>
-                      <th class="text-right">
-                        Salary
-                      </th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          Dakota Rice
-                        </td>
-                        <td>
-                          Niger
-                        </td>
-                        <td>
-                          Oud-Turnhout
-                        </td>
-                        <td class="text-right">
-                          $36,738
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Minerva Hooper
-                        </td>
-                        <td>
-                          Curaçao
-                        </td>
-                        <td>
-                          Sinaai-Waas
-                        </td>
-                        <td class="text-right">
-                          $23,789
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Sage Rodriguez
-                        </td>
-                        <td>
-                          Netherlands
-                        </td>
-                        <td>
-                          Baileux
-                        </td>
-                        <td class="text-right">
-                          $56,142
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Philip Chaney
-                        </td>
-                        <td>
-                          Korea, South
-                        </td>
-                        <td>
-                          Overland Park
-                        </td>
-                        <td class="text-right">
-                          $38,735
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Doris Greene
-                        </td>
-                        <td>
-                          Malawi
-                        </td>
-                        <td>
-                          Feldkirchen in Kärnten
-                        </td>
-                        <td class="text-right">
-                          $63,542
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Mason Porter
-                        </td>
-                        <td>
-                          Chile
-                        </td>
-                        <td>
-                          Gloucester
-                        </td>
-                        <td class="text-right">
-                          $78,615
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Jon Porter
-                        </td>
-                        <td>
-                          Portugal
-                        </td>
-                        <td>
-                          Gloucester
-                        </td>
-                        <td class="text-right">
-                          $98,615
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <table id="myTable">  
+        <thead>  
+          <tr>  
+            <th>ENO</th>  
+            <th>EMPName</th>  
+            <th>Country</th>  
+            <th>Salary</th>  
+          </tr>  
+        </thead>  
+        <tbody>  
+          <tr>  
+            <td>001</td>  
+            <td>Anusha</td>  
+            <td>India</td>  
+            <td>10000</td>  
+          </tr>  
+          <tr>  
+            <td>002</td>  
+            <td>Charles</td>  
+            <td>United Kingdom</td>  
+            <td>28000</td>  
+          </tr>  
+          <tr>  
+            <td>003</td>  
+            <td>Sravani</td>  
+            <td>Australia</td>  
+            <td>7000</td>  
+          </tr>  
+           <tr>  
+            <td>004</td>  
+            <td>Amar</td>  
+            <td>India</td>  
+            <td>18000</td>  
+          </tr>  
+          <tr>  
+            <td>005</td>  
+            <td>Lakshmi</td>  
+            <td>India</td>  
+            <td>12000</td>  
+          </tr>  
+          <tr>  
+            <td>006</td>  
+            <td>James</td>  
+            <td>Canada</td>  
+            <td>50000</td>  
+          </tr>  
+          
+           <tr>  
+            <td>007</td>  
+            <td>Ronald</td>  
+            <td>US</td>  
+            <td>75000</td>  
+          </tr>  
+          <tr>  
+            <td>008</td>  
+            <td>Mike</td>  
+            <td>Belgium</td>  
+            <td>100000</td>  
+          </tr>  
+          <tr>  
+            <td>009</td>  
+            <td>Andrew</td>  
+            <td>Argentina</td>  
+            <td>45000</td>  
+          </tr>  
+          
+            <tr>  
+            <td>010</td>  
+            <td>Stephen</td>  
+            <td>Austria</td>  
+            <td>30000</td>  
+          </tr>  
+          <tr>  
+            <td>011</td>  
+            <td>Sara</td>  
+            <td>China</td>  
+            <td>750000</td>  
+          </tr>  
+          <tr>  
+            <td>012</td>  
+            <td>JonRoot</td>  
+            <td>Argentina</td>  
+            <td>65000</td>  
+          </tr>  
+        </tbody>  
+      </table> 
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    @endsection
+      <script src="{{asset('public/assets/js/core/jquery.min.js')}}"></script>
+      
+  <script>
+    $(document).ready(function() {
+      $('#myTable').dataTable();
+    } );
+  </script>
+@endsection
+    

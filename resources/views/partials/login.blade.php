@@ -15,7 +15,7 @@
                         <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                         <div class="col-md-6">
-                            <input id="phone" type="number" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}"  autocomplete="phone" autofocus>
+                            <input id="phone" type="number" class="form-control" name="phone" value="{{ old('phone') }}"  autocomplete="phone" autofocus>
 
                             @error('phone')
                                 <span class="invalid-feedback" role="alert">
@@ -88,18 +88,41 @@
                      
                   },
                   success: function(response){
-                    
+                    console.log(response);
                   	if (response.status === true) {
-                            console.log(response.message);
-                            $('.alert-danger').hide();
-                            $('#loginModal').modal('toggle');
+                        console.log(response.status);
+                        $('.alert-danger').hide();
+                        $('#loginModal').modal('toggle');
+                        window.location.href = "{{ url('home')}}";
                         } else {
+                            console.log(response.status);
                             alert('Issue');
                         }
                   },error: function (response) {
+                      // @error('phone') is-invalid @enderror
+                      let message='';
+                      let err = '';
+                      console.log(response.responseJSON.message);
+                      $.each( response.responseJSON.message, function( key, value ) {
+                        //alert( key + ": " + value );
+                        message = value;
+                        if(key==='phone'){
+                            $("#phone").addClass("is-invalid");
+                        }else{
+                            //$("#phone").removeClass("is-invalid");
+                        }
+                        if(key==='password'){
+                            $("#password").addClass("is-invalid");
+                        }else{
+                            //$("#password").removeClass("is-invalid");
+                        }
+
+                            err += '<li>'+value+'</li>';
+                        });
                     $('.alert-danger').html('');
                     $('.alert-danger').show();
-                        $('.alert-danger').append('<li>'+response.responseJSON.message+'</li>');
+                    
+                    $('.alert-danger').append(err);
                     console.log(response)
                     //alert(response.responseJSON.message);
                     }});

@@ -17,6 +17,8 @@
   <!-- CSS Files -->
   <link href="{{asset('public/assets/css/bootstrap.min.css')}}" rel="stylesheet" />
   <link href="{{asset('public/assets/css/paper-dashboard.css?v=2.0.1')}}" rel="stylesheet" />
+  <link rel="stylesheet" 
+href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="{{asset('public/assets/demo/demo.css')}}" rel="stylesheet" />
 </head>
@@ -27,13 +29,13 @@
   
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo">
-        <a href="{{url('/')}}" class="simple-text logo-mini">
+        <a href="{{url('home')}}" class="simple-text logo-mini">
           <div class="logo-image-small">
             <img src="{{asset('public/assets/img/logo-small.png')}}">
           </div>
           <!-- <p>CT</p> -->
         </a>
-        <a href="{{url('/')}}" class="simple-text logo-normal">
+        <a href="{{url('home')}}" class="simple-text logo-normal">
           Tech Camino
           <!-- <div class="logo-image-big">
             <img src="../assets/img/logo-big.png">
@@ -43,7 +45,7 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li  class="@if(Request::is('/')) active @endif">
-            <a href="{{url('/')}}">
+            <a href="{{url('home')}}">
               <i class="nc-icon nc-bank"></i>
               <p>Dashboard</p>
             </a>
@@ -102,7 +104,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="{{url('/')}}">EPOS</a>
+            <a class="navbar-brand" href="{{url('home')}}">EPOS</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -201,6 +203,7 @@
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="{{asset('public/assets/js/paper-dashboard.min.js?v=2.0.1')}}" type="text/javascript"></script><!-- Paper Dashboard DEMO methods, don't include it in your project! -->
   <script src="{{asset('public/assets/demo/demo.js')}}"></script>
+  <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
   
   @yield('scripts')
 </body>
