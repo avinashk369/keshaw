@@ -17,8 +17,8 @@ class CreateStockMasterTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->bigInteger('product_code');
-            $table->bigInteger('owner_id');
-            $table->bigInteger('group_id');
+            $table->foreignId('store_id');
+            $table->foreignId('group_id');
             $table->integer('qty');
             $table->double('p_rate')->default(0.0);
             $table->double('p_eva')->default(0.0);

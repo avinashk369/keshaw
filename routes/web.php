@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\CustomersController;
 use App\Http\Middleware\AdminAuth;
 
 /*
@@ -41,6 +43,10 @@ Route::middleware([AdminAuth::class])->group(function () {
         return view('navigations.typography');
     });
 
+    Route::get('/products',[ProductsController::class,'loadProducts']);
+    Route::get('/addProduct',[ProductsController::class,'addEditProduct']);
+    Route::get('/customers',[CustomersController::class,'loadCustomers']);
+    Route::get('/addCustomer',[CustomersController::class,'addEditCustomer']);
     
 });
 
