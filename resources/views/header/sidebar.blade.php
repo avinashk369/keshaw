@@ -41,14 +41,14 @@
               <p>Customers</p>
             </a>
           </li>
-          <li class="@if(Request::is('table')) active @endif">
-            <a href="{{url('table')}}">
+          <li class="@if(Request::is('orders') || Request::is('addOrder')) active @endif">
+            <a href="{{url('orders')}}">
               <i class="nc-icon nc-tile-56"></i>
               <p>Orders</p>
             </a>
           </li>
-          <li class="@if(Request::is('typography')) active @endif">
-            <a href="{{url('typography')}}">
+          <li class="@if(Request::is('reports') || Request::is('dsr') || Request::is('dor')) active @endif">
+            <a href="{{url('reports')}}">
               <i class="nc-icon nc-caps-small"></i>
               <p>Report</p>
             </a>
